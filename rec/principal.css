@@ -142,6 +142,27 @@ header .navigation li a.txtcont:hover{
     font-size: 1.3em;
 }
 
+.final {
+    background: #1e214d;
+    padding: 75px 100px 10px;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.final .finalcon h2{
+    color: #face15;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.final .finalcon p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
 /*RESPOSIVE SECICNO*/
 @media (max-width: 1000px){
     header{
