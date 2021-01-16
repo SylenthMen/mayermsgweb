@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #0e0f1a;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: #1a1b26;
+}    
+
+header .logo {
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .navigation li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+header .navigation li a.txtprin:hover {
+    color: #face15;
+    background: #333;
+    padding: 10px 15px 15px;
+}
+
+header .navigation li a.txtcara:hover {
+    color: #0b78e3;
+    background: #333;
+    padding: 10px 15px 15px;
+}
+
+header .navigation li a.txtfaq:hover {
+    color: #ff2366;
+    background: #333;
+    padding: 10px 15px 15px;
+}
+
+header .navigation li a.txtcont:hover{
+    color: #7ed321;
+    background: #333;
+    padding: 10px 15px 15px;
+}
+
+.banner {
+    background: #0e0f1a;
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .content {
+    max-width: 700px;
+}
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.banner .content a {
+    text-decoration: none;
+    display: inline-block;
+    background: #444;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+    border: 3px solid #444;
+}
+
+.banner .content a:hover {
+    transition: 0.5s;
+    border: 3px solid #444;
+    background: none;
+    color: #face15;
+}
+
+.banner .image {
+    /*filter: invert(1);*/
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.descripcion{
+    background: #1a1b26;
+    padding: 75px 100px 10px;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descripcion .contenidodes h2 {
+    color: #face15;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.descripcion .contenidodes p {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+/*RESPOSIVE SECICNO*/
+@media (max-width: 1000px){
+    header{
+        padding: 10px 20px;
+    }
+
+    .banner{
+        padding: 150px 20px 50px;
+        flex-direction: column;
+    }
+
+    .banner .image{
+        margin-left: 0;
+        /*max-width: 95%;*/
+    }
+
+    .banner .content h2{
+        font-size: 2em;
+    }
+}
